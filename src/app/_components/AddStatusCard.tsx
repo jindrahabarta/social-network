@@ -4,9 +4,8 @@ import useDb from '../_utils/useDb'
 import { addDoc, collection, serverTimestamp } from 'firebase/firestore'
 import GalleryUploadIcon from '../icons/GalleryUploadIcon'
 
-const { db, dbImg } = useDb()
-
 const AddStatusCard = () => {
+    const { db, dbImg } = useDb()
     const [inputText, setInputText] = useState<string>('')
     const [imageUrl, setImageUrl] = useState<string>('')
     const [show, setShow] = useState(false)
