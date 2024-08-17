@@ -23,8 +23,11 @@ const Admin = () => {
                 <p>Error! Try it again.</p>
             ) : loaded ? (
                 posts && posts.length > 0 ? (
-                    posts.map((post: any) => (
-                        <div className=" w-full md:w-1/2 p-4 card rounded-2xl flex flex-col gap-4">
+                    posts.map((post: any, i: number) => (
+                        <div
+                            key={i}
+                            className=" w-full md:w-1/2 p-4 card rounded-2xl flex flex-col gap-4"
+                        >
                             <Link href="/" className="flex gap-2 group w-fit">
                                 <div className="bg-lightGray w-10 h-10 rounded-xl"></div>
                                 <div>
