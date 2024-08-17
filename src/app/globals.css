@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #18191a;
+    @apply transition-colors duration-200;
+}
+
+.dark * {
+    color: white;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+h2 {
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+h3 {
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+h4 {
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.icon {
+    fill: #737477;
+}
+
+.dark .icon {
+    fill: #b0b3b8;
+}
+
+.icon-stroke {
+    stroke: #737477;
+}
+
+.dark .icon-stroke {
+    stroke: #b0b3b8;
+}
+
+.input {
+    background-color: #c9c9c9;
+    opacity: 80%;
+}
+
+.input:focus,
+select {
+    color: #18191a;
+}
+
+.dark .input:focus,
+select {
+    color: white;
+}
+
+.dark .input {
+    background-color: #3a3b3c;
+}
+
+.card {
+    background-color: white;
+}
+.dark .card {
+    background-color: #242526;
+}
